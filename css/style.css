@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Raleway';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrap {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.1))), url(../img/rally-10.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(../img/rally-10.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 4rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.3)));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+}
+
+.nav__logo {
+  height: 8rem;
+  display: block;
+  margin-right: 2rem;
+}
+
+.nav__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__item {
+  text-decoration: none;
+  letter-spacing: 4px;
+  font-weight: 300;
+  padding: 2.5rem 2rem;
+  color: #fff;
+  font-size: 2.5rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.nav__item:hover {
+  background-color: grey;
+}
+
+.nav__social {
+  position: relative;
+  padding: 2.5rem 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.nav__social:hover {
+  background-color: grey;
+}
+
+.nav__social:hover .nav__social-list {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav__social-list {
+  position: absolute;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  top: 100%;
+  background-color: grey;
+  list-style: none;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  visibility: hidden;
+}
+
+.nav__social-item {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: block;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.75rem;
+  -webkit-transition: .2s;
+  transition: .2s;
+  overflow: hidden;
+  border-top: 1px solid #111;
+}
+
+.nav__social-item:hover {
+  background-color: #333;
+}
+/*# sourceMappingURL=style.css.map */

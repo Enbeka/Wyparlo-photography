@@ -1,0 +1,92 @@
+.wrap{
+    background-image: linear-gradient(to right bottom, rgba(#000, .7), rgba(#000, .1)) ,url(../img/rally-10.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    padding: 0 4rem;
+    background-image: linear-gradient(to right, rgba(#fff, .1), rgba(#fff, .3));
+
+    &__logo{
+        height: 8rem;
+        display: block;
+        margin-right: 2rem;
+    }
+
+    &__list{
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item{
+        text-decoration: none;
+        letter-spacing: 4px;
+        font-weight: 300;
+        padding: 2.5rem 2rem;
+        color: #fff;
+        font-size: 2.5rem;
+        transition: .3s;
+        
+        &:hover {
+            background-color: grey;
+        }
+    }
+
+    &__social{
+        position: relative;
+        padding: 2.5rem 0;
+        transition: .3s;
+
+         &:hover{
+            background-color:grey;
+        }
+    }
+
+    &__social:hover &__social-list{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__social-list{
+        position: absolute;
+        width: 100%;
+        height: max-content;
+        top:100%;
+        background-color: grey;
+        list-style: none;
+        opacity: 0;
+        transition: .3s;
+        visibility: hidden;
+    }
+
+    &__social-item{
+        text-decoration: none;
+        color: #fff;
+        padding: 1rem 2rem;
+        display: block;
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 1.75rem;
+        transition: .2s;
+        overflow: hidden;
+        border-top: 1px solid #111;
+
+        &:hover{
+            background-color: #333;
+        }
+    }
+}
+
+.socials{
+
+}
