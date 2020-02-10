@@ -1,10 +1,10 @@
 .portfolio-bg{
-    background-color: #010101;
+    background-color: #111;
 }
 
 .portfolio__container{
     max-width: 1400px;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +12,7 @@
     align-content: center;
     padding: 12rem 0 8rem;
     z-index: -2;
-}
+} 
 
 .portfolio__item{
     flex-basis: 30%;

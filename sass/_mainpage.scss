@@ -22,12 +22,12 @@
     z-index: 100;
 
     &__logo{
-        height: 8rem;
+        height: 7.5rem;
         display: block;
         margin-right: 2rem;
 
         img{
-            height: 8rem;
+            height: 7.5rem;
         }
     }
 
@@ -43,7 +43,7 @@
         font-weight: 300;
         padding: 2.5rem 2rem;
         color: #fff;
-        font-size: 2.5rem;
+        font-size: 2rem;
         transition: .3s;
         
         &:hover {
