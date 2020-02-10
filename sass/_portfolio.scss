@@ -20,6 +20,9 @@
     // overflow: hidden;
     box-shadow: 0 0rem 3rem rgba(#fff, .1);
     margin-bottom: 7rem;
+    opacity: 0;
+    transition: 2s;
+    
 
     &:hover{
         box-shadow: none;
@@ -48,6 +51,7 @@
    display: block;
    filter: grayscale(100%) brightness(70%);
    transition: .3s;
+   border-radius: 3px;
 }
 
 .portfolio__item:hover .portfolio__img{
