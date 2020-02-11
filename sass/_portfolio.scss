@@ -10,8 +10,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
-    padding: 12rem 0 8rem;
+    padding: 12rem 2rem 8rem;
     z-index: -2;
+
+    @media (max-width: $bp-largest){
+        padding: 12rem 4rem 8rem;
+    }
 } 
 
 .portfolio__item{

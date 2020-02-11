@@ -10,6 +10,10 @@
     margin: 0 auto;
     display: flex;
 
+    @media (max-width: $bp-large){
+        flex-direction: column;
+    }
+
     &__content{
         flex-basis: 60%;
         padding: 0 7rem;
@@ -33,7 +37,7 @@
 
     &__input,
     {
-        width: 35rem;
+        max-width: 35rem;
         padding: 1rem 2rem;
         font-family: 'Raleway';
         border: none;
@@ -110,6 +114,12 @@
         flex-basis: 40%;
         overflow: hidden;
         height: 24rem;
+
+        @media (max-width: $bp-large){
+            margin-right: 4rem;
+            margin-left: 4rem;
+        }
+
 
         &-img{
             width: 100%;
