@@ -11,6 +11,7 @@
 			rel="stylesheet"
         />
         <script src="https://kit.fontawesome.com/118a8dcb99.js" crossorigin="anonymous"></script>
+        <link href="dist/css/lightbox.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
@@ -32,12 +33,13 @@
 				</ul>
             </nav>
             <div class="gallery__container">
-               <div class="gallery__item"><img src="img/drone-1.jpg" alt="drone 1" class="gallery__img"></div>
-               <div class="gallery__item"><img src="img/drone-2.jpg" alt="drone 2" class="gallery__img"></div>
-               <div class="gallery__item"><img src="img/drone-3.jpg" alt="drone 3" class="gallery__img"></div>
-               <div class="gallery__item"><img src="img/drone-4.jpg" alt="drone 4" class="gallery__img"></div>
-               <div class="gallery__item"><img src="img/drone-5.jpg" alt="drone 5" class="gallery__img"></div>
-               <div class="gallery__item"><img src="img/drone-6.jpg" alt="drone 6" class="gallery__img"></div>
+               <div class="gallery__item"><a href="img/drone-1.jpg" data-lightbox="drone"><img src="img/drone-1.jpg" alt="drone 1" class="gallery__img"></a></div>
+               <div class="gallery__item"><a href="img/drone-2.jpg" data-lightbox="drone"><img src="img/drone-2.jpg" alt="drone 2" class="gallery__img"></a></div>
+               <div class="gallery__item"><a href="img/drone-3.jpg" data-lightbox="drone"><img src="img/drone-3.jpg" alt="drone 3" class="gallery__img"></a></div>
+               <div class="gallery__item"><a href="img/drone-4.jpg" data-lightbox="drone"><img src="img/drone-4.jpg" alt="drone 4" class="gallery__img"></a></div>
+               <div class="gallery__item"><a href="img/drone-5.jpg" data-lightbox="drone"><img src="img/drone-5.jpg" alt="drone 5" class="gallery__img"></a></div>
+               <div class="gallery__item"><a href="img/drone-6.jpg" data-lightbox="drone"><img src="img/drone-6.jpg" alt="drone 6" class="gallery__img"></a></div>
+               
                
 
             </div>
@@ -46,7 +48,8 @@
                 <a href="https://www.flickr.com/photos/96161279@N08/albums" class="socials__icon" target="_blank"><i class="fab fa-flickr"></i></a>
                 <a href="https://www.instagram.com/piotrwyparlo/" class="socials__icon" target="_blank"><i class="fab fa-instagram-square"></i></a> 
 			</div>
-		</div>
+        </div>
+        <script src="dist/js/lightbox-plus-jquery.js"></script>
+        <script src="main.js"></script>
     </body>
-    <script src="main.js"></script>
 </html>
