@@ -580,7 +580,7 @@ html {
   border-radius: 4px;
 }
 
-@media (max-width: 50em) {
+@media (max-width: 37.5em) {
   .gallery__item {
     -ms-flex-preferred-size: 90%;
         flex-basis: 90%;
