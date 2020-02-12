@@ -14,11 +14,19 @@
         flex-direction: column;
     }
 
+    @media (max-width: $bp-small){
+        padding: 12rem 0 0;
+    }
+
     &__content{
         flex-basis: 60%;
         padding: 0 7rem;
         opacity: 0;
         transition: 1.5s;
+
+        @media (max-width: $bp-small){
+            padding: 0 3rem;
+        }
     }
 
     &__paragraph{
@@ -99,6 +107,10 @@
         transition: .3s;
         cursor: pointer;
 
+        @media (max-width: $bp-small){
+            margin-top: 0;
+        }
+
         &:hover{
             letter-spacing: 3px;
         }
@@ -116,8 +128,13 @@
         height: 24rem;
 
         @media (max-width: $bp-large){
-            margin-right: 4rem;
-            margin-left: 4rem;
+            margin-right: 7rem;
+            margin-left: 7rem;
+        }
+
+        @media (max-width: $bp-small){
+            margin-right: 3rem;
+            margin-left: 3rem;
         }
 
 
@@ -135,9 +152,6 @@
     }
 } 
 
-.nav__social:hover * .contact__paragraph {
-    color: red;
-}
 
 
 

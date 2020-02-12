@@ -11,6 +11,10 @@ $bp-large: 62.5em; // 1000px
 $bp-medium: 50em; // 800px
 $bp-small: 37.5em; // 600px
 
+.opaque-bg{
+    background-color: #666 !important;
+}
+
 *,
 *::before,
 *::after{
@@ -26,6 +30,10 @@ html{
 
     @media (max-width: $bp-largest){
         font-size: 50%;
+    }
+
+    @media (max-width: $bp-small){
+        font-size: 43.75%;
     }
 }
 

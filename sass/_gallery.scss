@@ -11,6 +11,18 @@
     justify-content: space-around;
     align-content: center;
     padding: 15rem 0 8rem;
+
+    @media (max-width: $bp-largest){
+        padding: 13rem 4rem 4rem;
+    }
+
+    @media (max-width: $bp-medium){
+        padding: 13rem 4rem 2rem;
+    }
+
+    @media (max-width: $bp-small){
+        padding: 12rem 3rem 2rem;
+    }
 } 
 
 .gallery__item{
@@ -18,6 +30,10 @@
     overflow: hidden;
     margin-bottom: 5rem;
     border-radius: 4px;
+
+    @media (max-width: $bp-medium){
+        flex-basis: 90%;
+    }
 }
 
 .gallery__img{
@@ -26,6 +42,10 @@
     opacity: 0;
     filter: brightness(85%) grayscale(20%);
     transition: transform .7s, filter .7s, opacity 1.5s;
+
+    @media (max-width: $bp-largest){
+        filter: brightness(100%) grayscale(0);
+        }
 
     &:hover{
         transform: scale(1.07);
