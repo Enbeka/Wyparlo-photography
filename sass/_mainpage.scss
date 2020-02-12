@@ -28,6 +28,7 @@
     
         @media (max-width: $bp-small){
         justify-content: center;
+        padding: 0 2rem;
         }
 
 
@@ -38,7 +39,7 @@
         margin-right: 2rem;
 
         @media (max-width: $bp-small){
-            display: none;
+            height: 7rem;
         }
 
         img{
@@ -66,8 +67,8 @@
         }
 
         @media (max-width: $bp-small){
-            padding: 2.5rem 1.75rem;
-            // letter-spacing: 3px;
+            padding: 2.5rem 1.25rem;
+            letter-spacing: 3px;
         }
     }
 
@@ -110,6 +111,10 @@
 
         &:hover{
             background-color: rgba(#fff, .4);
+        }
+
+        @media (max-width: $bp-small){
+            padding: 1rem 1rem;
         }
     }
 }

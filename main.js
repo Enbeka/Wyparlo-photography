@@ -1,13 +1,19 @@
 
 //zdjecie contact
-setTimeout(function() {
-	document.querySelector(".contact__photo-img").style.opacity = "1";
-}, 3000);
+if (document.querySelector(".contact__photo-img") != null){
+    setTimeout(function() {
+        document.querySelector(".contact__photo-img").style.opacity = "1";
+    }, 3000);
+}
+
 
 //text contact
-setTimeout(function(){
-    document.querySelector('.contact__content').style.opacity = '1';
-},500)
+if (document.querySelector('.contact__content') != null){
+    setTimeout(function(){
+        document.querySelector('.contact__content').style.opacity = '1';
+    },500)
+}
+
 
 
 //zdjecia portfolio
@@ -27,3 +33,24 @@ galleryItems.forEach(item => {
         item.style.opacity = '1'
     },Math.floor(Math.random()*2000))
 })
+
+// podmiana nav logo
+
+
+let windowWidth = window.innerWidth;
+if (windowWidth <= 600){
+    document.getElementById("img").src ="img/logo-small.png";
+}
+
+window.onresize = function(){
+    let windowWidth = window.innerWidth;
+
+    if (windowWidth <= 600){
+        document.getElementById("img").src ="img/logo-small.png";
+        }else{
+            document.getElementById("img").src ="img/logo.png";
+        }
+    }
+
+    
+
